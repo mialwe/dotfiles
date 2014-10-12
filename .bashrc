@@ -112,4 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# enable 256color mode for some terminals, the solarized color scheme
+# did not work in some terminals without this.
 export TERM=xterm-256color
