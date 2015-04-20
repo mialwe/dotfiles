@@ -11,6 +11,10 @@
 #
 # By default this script does nothing.
 #
+
 # Disable wake-on-USB-action (e.g. moving USB mouse)
 echo XHC > /proc/acpi/wakeup
+
+# Disable bluetooth:
+hciconfig hci0 down
 exit 0
