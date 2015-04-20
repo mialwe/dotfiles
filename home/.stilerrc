@@ -1,0 +1,10 @@
+#Tweak these values 
+[default]
+BottomPadding = 0
+TopPadding = 0
+LeftPadding = 0
+RightPadding = 0
+WinTitle = 21
+WinBorder = 1
+MwFactor = 0.55
+TempFile = /tmp/tile_winlist
