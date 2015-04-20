@@ -11,5 +11,6 @@
 #
 # By default this script does nothing.
 #
+# Disable wake-on-USB-action (e.g. moving USB mouse)
 echo XHC > /proc/acpi/wakeup
 exit 0

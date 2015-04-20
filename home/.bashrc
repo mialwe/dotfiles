@@ -56,6 +56,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# default prompt, regular user=green, input=white, reset afterwards,
+# source http://www.grison.me/2011/11/20/Unix-Prompt
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
