@@ -19,12 +19,9 @@ set directory=~/.backup,/tmp
 let g:SuperTabDefaultCompletionType = "context"
 
 set t_Co=16
-" SOLARIZED DARK THEME
-if &t_Co > 8 
-    let g:solarized_termcolors=16 
-    set background=dark 
-    colorscheme solarized 
-endif
+let g:solarized_termcolors=16 
+set background=dark 
+colorscheme solarized 
 
 " REDCODE HIGHLIGHTING
 "let redcode_88_only = 1 
