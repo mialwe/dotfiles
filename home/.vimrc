@@ -37,16 +37,16 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 filetype indent on
 " Tab width to 2 spaces
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType css setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType sass setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType scss setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType haml setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType erb setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType ruby setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType coffee setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType css setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType sass setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType scss setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType haml setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType erb setlocal shiftwidth=4 tabstop=4 expandtab
+autocmd FileType yaml setlocal shiftwidth=4 tabstop=4 expandtab
 
 nnoremap <silent> <F5> :<C-u>call system('xdotool windowactivate --sync $(xdotool search --onlyvisible --class Chromium-browser\|head -1) && xdotool key ctrl+r')<CR>    
 
