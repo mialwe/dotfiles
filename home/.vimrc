@@ -14,9 +14,10 @@ set clipboard+=unnamedplus
 
 set backupdir=~/.backup,/tmp
 set directory=~/.backup,/tmp
+
 " Omnicomplete -> SuperTab
 "let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
+"let g:SuperTabDefaultCompletionType = "context"
 
 set t_Co=16
 let g:solarized_termcolors=16 
@@ -31,12 +32,10 @@ colorscheme solarized
 let redcode_highlight_numbers=1
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
-"
-" " Show just the filename
+" Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t' 
 
 filetype indent on
-" Tab width to 2 spaces
 autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType ruby setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 expandtab
@@ -58,5 +57,6 @@ au BufNewFile,BufRead,BufEnter   *.txt     setlocal spell    spelllang=de_de
 au BufNewFile,BufRead,BufEnter   README    setlocal spell    spelllang=en_us
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jar,*.tar,*.epub,*.azw3,*.mobi
+
 vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
