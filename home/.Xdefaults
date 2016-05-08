@@ -34,20 +34,19 @@ Xft*hintstyle: hintslight
 Xft*rgba: rgb
 Xft*lcdfilter: lcddefault
 Xft.dpi: 96
-
-!URxvt*font: xft:DejaVu Sans Mono:size=10
+URxvt*borderLess: false
+URxvt*font: xft:Source\ Code\ Pro\ for\ Powerline:size=12
 !URxvt*font: xft:Inconsolata:size=10
 !URxvt*font: xft:Terminus:size=10
-!URxvt*scrollBar: false
-
+URxvt*scrollBar: false
+URxvt.letterSpace: -1
 XTerm*bellIsUrgent: true
 URxvt.urgentOnBell: true
-URxvt*borderLess: true
 URxvt*cursorBlink: true
 urxvt*depth: 24
 URxvt*background: black
 URxvt*foreground: white
-URxvt.intensityStyles: false
+!URxvt.intensityStyles: false
 
 ! Solarized color scheme for the X Window System
 ! http://ethanschoonover.com/solarized
@@ -128,8 +127,43 @@ URxvt*color15: S_base3
 *color13: S_violet
 *color14: S_base1
 *color15: S_base3
+URxvt*internalBorder: 1
+URxvt*externalBorder: 1
+URxvt*saveLines:            10000
+URxvt*geometry:             96x40
+urxvt*perl-lib:         /usr/lib/urxvt/perl
+URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.iso14755: False
 
+URxvt.keysym.M-Escape:          perl:keyboard-select:activate
+URxvt.keysym.M-c:               perl:clipboard:copy
+URxvt.keysym.M-v:               perl:clipboard:paste
+URxvt.keysym.M-C-v:             perl:clipboard:paste_escaped
+!URxvt.copyCommand:              xsel --copy --selection CLIPBOARD
+!URxvt.pasteCommand:             xsel --paste --selection CLIPBOARD
+URxvt.copyCommand:              /usr/local/bin/xclip -i -selection clipboard
+URxvt.pasteCommand:             /usr/local/bin/xclip -o -selection clipboard
+
+! Launch firefox with the a left click on a URL
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+! Tabs: gray background, ~white text
+! and the opposite for the currently focused tab
+URxvt.tabbed.tabbar-fg: 7
+URxvt.tabbed.tabbar-bg: 8
+URxvt.tabbed.tab-fg: 8
+URxvt.tabbed.tab-bg: 252
+
+! Display the title of terminal next to tabs list
+URxvt.tabbed.title: true
+URxvt.tabbed.title-bg: 8
+URxvt.tabbed.title-fg: 7
 ! Xterm
+XTerm*faceName: Droid Sans Mono
+XTerm*faceSize: 11
+UXTerm*faceName: Droid Sans Mono
+UXTerm*faceSize: 11
 XTerm*background: S_base03
 XTerm*foreground: S_base0
 XTerm*fading: 40
